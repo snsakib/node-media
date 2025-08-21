@@ -10,8 +10,6 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="index.js"></script>
   </head>
   <body class="bg-light">
     <div class="container mt-5">
@@ -19,7 +17,7 @@
         <div class="col-12">
           <div class="card shadow-lg">
             <div class="card-body">
-              <form id="my_form">
+              <form id="my_form" enctype="multipart/form-data">
                 <div class="mb-3">
                   <label for="title" class="form-label">Title</label>
                   <input
@@ -27,6 +25,73 @@
                     type="text"
                     name="title"
                     id="title"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="single_image" class="form-label">Single Image</label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="single_image"
+                    id="single_image"
+                    accept="image/*"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="multiple_images" class="form-label"
+                    >Multiple Images (Max 2 images)</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="multiple_images"
+                    id="multiple_images"
+                    accept="image/*"
+                    multiple
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="single_video" class="form-label">Single Video</label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="single_video"
+                    id="single_video"
+                    accept="video/*"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="multiple_videos" class="form-label"
+                    >Multiple Videos (Max 2 videos)</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="multiple_videos"
+                    id="multiple_videos"
+                    accept="video/*"
+                    multiple
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="single_audio" class="form-label">Single Audio</label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="single_audio"
+                    id="single_audio"
+                    accept="audio/*"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="multiple_audios" class="form-label">Multiple Audios (Max 2 audios)</label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="multiple_audios"
+                    id="multiple_audios"
+                    accept="audio/*"
+                    multiple
                   />
                 </div>
                 <div class="d-grid">
@@ -38,10 +103,12 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
